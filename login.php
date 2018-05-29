@@ -7,7 +7,7 @@
 	$link=@mysqli_connect(
 				'localhost',
 				'root',
-				'sea1112223',
+				'',
 				'user');
 
 	mysqli_select_db($link,'user');
