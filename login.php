@@ -1,35 +1,27 @@
 <?php
+session_start();
+$userID=$_POST["userID"];
+$userPASS=$_POST["userPASS"];
+$link=@mysqli_connect(
+            '140.127.218.154',
+            'root',
+            'tarot9605',
+            'tarot');
+mysqli_select_db($link,'member');
 
-	session_start();
-	$userID=$_POST["userID"];
-	$userPASS=$_POST["userPASS"];
+$sql="SELECT * FROM member";
+$result=mysqli_query($link,$sql);
 
-	$link=@mysqli_connect(
-				'localhost',
-				'root',
-				'',
-				'user');
-
-	mysqli_select_db($link,'user');
-
-	$sql="SELECT * FROM user";
-
-	$result=mysqli_query($link,$sql);
-
-	while($row=mysqli_fetch_assoc($result)){
-		if($userID==$row['ID'] && $userPASS==$row['password']){
-			$_SESSION["login"]=true;
-		}else{
-			$_SESSION["login"]=false;
-		}
+while($row=mysqli_fetch_assoc($result)){
+    if($userID==$row['name'] && $userPASS==$row['password']){
+        $_SESSION["login"]=true;
 	}
+}
 
-	if($_SESSION["login"]==true){
-		header("Location:home.html");
-	}else{
-		echo "登入失敗重返登入網頁！";
-		header("Refresh:3; url='login.html'");
-	}
+if($_SESSION["login"]==true)
+	header("Location:index.html");
+else
+	echo "請重新輸入";
 
-	mysqli_close($link);
+mysqli_close($link);
 ?>
