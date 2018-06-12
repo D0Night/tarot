@@ -7,19 +7,20 @@
 	</head>
 	
 	<body>
-<?php	
+
 		<header id="header" class="alt">
 			<div class="logo">
-
+<?php	
+				session_start();
 				if($_SESSION["login"]==true){
-					<a href="index.html">Home</a> /
-					<a href="logout.php">Logout</a>
+					echo "<a href="index.html">Home</a>"." /";
+					echo "<a href="logout.php">Logout</a>";
 				}else{
-					<a href="index.html">Home</a> /
-					<a href="enroll.html">Sign up</a> /
-					<a href="login.html">Login</a> 
+					echo "<a href="index.html">Home</a>"." /";
+					echo "<a href="enroll.html">Sign up</a>"." /";
+					echo "<a href="login.html">Login</a>";
 				}
-				
+?>				
 			</div>
 			
 			<a href="#menu" class="toggle"><span>Menu</span></a>
