@@ -21,7 +21,7 @@
 				<li><a href="index.html">首頁</a></li>
 				<li><a href="login.html">登入</a></li>
 				<li><a href="logout.php">登出</a></li>
-				<li><a href="game.html">遊戲開始</a></li>
+				<li><a href="check.php">遊戲開始</a></li>
 				<li><a href="recommend.html">相關商品推薦</a></li>
 			</ul>
 		</nav>
