@@ -1,7 +1,7 @@
 <?php
 session_start();
-$userID=$_POST["userID"];
-$userPASS=$_POST["userPASS"];
+$userID=$_POST["name"];
+$userPASS=$_POST["password"];
 $link=@mysqli_connect(
             '140.127.218.154',
             'root',
