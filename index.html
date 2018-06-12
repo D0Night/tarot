@@ -7,10 +7,10 @@
 	</head>
 	
 	<body>
-	
+<?php	
 		<header id="header" class="alt">
 			<div class="logo">
-<?php
+
 				if($_SESSION["login"]==true){
 					<a href="index.html">Home</a> /
 					<a href="logout.php">Logout</a>
@@ -19,7 +19,7 @@
 					<a href="enroll.html">Sign up</a> /
 					<a href="login.html">Login</a> 
 				}
-?>				
+				
 			</div>
 			
 			<a href="#menu" class="toggle"><span>Menu</span></a>
@@ -27,7 +27,7 @@
 
 		<nav id="menu">
 			<ul class="links">
-<?php
+
 				if($_SESSION["login"]==true){
 					<li><a href="index.html">首頁</a></li>
 					<li><a href="logout.html">登出</a></li>
@@ -40,10 +40,10 @@
 					<li><a href="game.html">遊戲開始</a></li>
 					<li><a href="recommend.html">相關商品推薦</a></li>
 				}
-?>
+
 			</ul>
 		</nav>
-		
+?>		
 		<section id="banner" data-video="images/background">
 			<div class="inner">
 				<h1>塔羅牌占卜</h1>
