@@ -32,13 +32,14 @@
 			<div class="inner">
 				<div class="box">
 					<div class="content">
-						<header class="align-center">
-                            <h2>會員專區</h2>
-                            <p>歡迎<?php echo $_COOKIE["ID"]?>，我們又見面了</p>
-						</header>
-						<hr>
-						<h3>個人資料</h3>
-						<p>
+					<header class="align-center">
+                            			<h2>會員專區</h2>
+                            			<p>歡迎<?php echo $_COOKIE["ID"]?>，我們又見面了</p>
+					</header>
+					<hr>
+					<font size="5" color="black">個人資料</font>
+                       			<font size="4" color="black">
+					<p>
 <?php
 session_start();
 $userID=$_COOKIE["ID"];
@@ -60,7 +61,8 @@ echo "性別：".$row['gender']."<br/>";
 echo "年齡：".$row['age']."<br/>";
 
 ?>
-                        </p>
+					</font>
+                       			</p>
                         <hr>
                         <h3>遊戲紀錄</h3>
                         <p>
