@@ -9,8 +9,10 @@
 
 		<header id="header">
 			<div class="logo">
-				<a href="index.html">Tarot</a> / 
-				<a href="logout.php">logout</a>
+				<a href="index.html">Home</a> /
+				<a href="enroll.html">Sign up</a> /
+				<a href="login.html">Login</a> /
+				<a href="logout.php">Logout</a>
 			</div>
 			<a href="#menu" class="toggle"><span>Menu</span></a>
 		</header>
@@ -18,7 +20,10 @@
 		<nav id="menu">
 			<ul class="links">
 				<li><a href="index.html">首頁</a></li>
-				<li><a href="game.html">遊戲開始</a></li>
+				<li><a href="enroll.html">註冊</a></li>
+				<li><a href="login.html">登入</a></li>
+				<li><a href="logout.php">登出</a></li>
+				<li><a href="check.php">遊戲開始</a></li>
 				<li><a href="recommend.html">相關商品推薦</a></li>
 			</ul>
 		</nav>
