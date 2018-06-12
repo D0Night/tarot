@@ -21,7 +21,7 @@ while($row=mysqli_fetch_assoc($result)){
 if($_SESSION["login"]==true)
 	header("Location:index.html");
 else
-	echo "請重新輸入";
+	echo "帳號密碼錯誤，請重新輸入";
 
 mysqli_close($link);
 ?>
