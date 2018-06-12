@@ -34,7 +34,7 @@
 <?php
 session_start();
 if($_SESSION["login"]==true){
-	header("Location:member.html");
+	header("Location:member.php");
 }else{
 	echo("若要進入會員專區請先登入</br><a href='login.php'>請點此進入登入頁面</a>");
 }	
