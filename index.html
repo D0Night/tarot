@@ -1,39 +1,3 @@
-<!-- <?php	
-	session_start();
-	<header id="header" class="alt">
-		<div class="logo">
-			if($_SESSION["login"]==true){
-				echo "<a href="index.html">Home</a>"." /";
-				echo "<a href="logout.php">Logout</a>";
-			}else{
-				echo "<a href="index.html">Home</a>"." /";
-				echo "<a href="enroll.html">Sign up</a>"." /";
-				echo "<a href="login.html">Login</a>";
-			}
-		</div>
-		<a href="#menu" class="toggle"><span>Menu</span></a>
-	</header>
-
-		<nav id="menu">
-			<ul class="links">
-
-				session_start();
-				if($_SESSION["login"]==true){
-					echo "<li><a href="index.html">首頁</a></li>";
-					echo "<li><a href="logout.html">登出</a></li>
-					echo "<li><a href="check.php">遊戲開始</a></li>
-					echo "<li><a href="recommend.html">相關商品推薦</a></li>
-				}else{
-					echo "<li><a href="index.html">首頁</a></li>";
-					echo "<li><a href="enroll.html">註冊</a></li>";
-					echo "<li><a href="login.html">登入</a></li>";
-					echo "<li><a href="check.php">遊戲開始</a></li>";
-					echo "<li><a href="recommend.html">相關商品推薦</a></li>";
-				}
-			</ul>
-		</nav>
-?> -->
-
 	<html>
 	<head>
 		<title>Tarot</title>
@@ -60,7 +24,7 @@
 				<li><a href="enroll.html">註冊</a></li>
 				<li><a href="login.html">登入</a></li>
 				<li><a href="logout.html">登出</a></li>
-				<li><a href="game.html">遊戲開始</a></li>
+				<li><a href="check.php">遊戲開始</a></li>
 				<li><a href="recommend.html">相關商品推薦</a></li>
 			</ul>
 		</nav>
