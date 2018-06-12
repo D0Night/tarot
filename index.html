@@ -10,10 +10,15 @@
 	
 		<header id="header" class="alt">
 			<div class="logo">
-				<a href="index.html">Home</a> /
-				<a href="enroll.html">Sign up</a> /
-				<a href="login.html">Login</a> /
-				<a href="logout.php">Logout</a>
+				if($_SESSION["login"]==true){
+					<a href="index.html">Home</a> /
+					<a href="logout.php">Logout</a>
+				}else{
+					<a href="index.html">Home</a> /
+					<a href="enroll.html">Sign up</a> /
+					<a href="login.html">Login</a> 
+				}
+				
 			</div>
 			
 			<a href="#menu" class="toggle"><span>Menu</span></a>
@@ -21,12 +26,18 @@
 
 		<nav id="menu">
 			<ul class="links">
-				<li><a href="index.html">首頁</a></li>
-				<li><a href="enroll.html">註冊</a></li>
-				<li><a href="login.html">登入</a></li>
-				<li><a href="logout.html">登出</a></li>
-				<li><a href="game.html">遊戲開始</a></li>
-				<li><a href="recommend.html">相關商品推薦</a></li>
+				if($_SESSION["login"]==true){
+					<li><a href="index.html">首頁</a></li>
+					<li><a href="logout.html">登出</a></li>
+					<li><a href="game.html">遊戲開始</a></li>
+					<li><a href="recommend.html">相關商品推薦</a></li>
+				}else{
+					<li><a href="index.html">首頁</a></li>
+					<li><a href="enroll.html">註冊</a></li>
+					<li><a href="login.html">登入</a></li>
+					<li><a href="game.html">遊戲開始</a></li>
+					<li><a href="recommend.html">相關商品推薦</a></li>
+				}
 			</ul>
 		</nav>
 		
