@@ -1,6 +1,6 @@
 <html>	
 	<head>
-		<title></title>
+		<title>Check</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -36,7 +36,7 @@ session_start();
 if($_SESSION["login"]==true){
 	header("Location:game.html");
 }else{
-	echo("若要開始遊戲請先登入</br><a href='login.php'>點此進入登入頁面</a>");
+	echo("若要開始遊戲請先登入</br><a href='login.php'>請點此進入登入頁面</a>");
 }	
 ?>
 					</h2>
