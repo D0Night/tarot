@@ -9,9 +9,10 @@
 
 		<header id="header">
 			<div class="logo">
-				<a href="index.html">Tarot</a> / 
-				<a href="login.html">Login</a> / 
-	    			<a href="enroll.html">Sign up</a>
+				<a href="index.html">Home</a> /
+				<a href="enroll.html">Sign up</a> /
+				<a href="login.html">Login</a> /
+				<a href="logout.php">Logout</a>
 			</div>
 			<a href="#menu" class="toggle"><span>Menu</span></a>
 		</header>
