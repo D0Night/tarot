@@ -96,11 +96,15 @@ if(isset($_SESSION["login"])){
 -						<header class="align-center">
 -							<h2>遊戲說明</h2>
 -						</header>
--						<hr />
--						<p align="center">Step1 - 選擇您想要諮詢的類別 →
--						Step2 - 在心中默想問題 →
--						Step3 - 抽選最有感應的一張牌 →
--						Step4 - 觀看解析</p>
+-						<hr />					
+-						<p align="center">
+							<font size="3">
+								Step1 - 選擇您想要諮詢的類別 →
+-								Step2 - 在心中默想問題 →
+-								Step3 - 抽選最有感應的一張牌 →
+-								Step4 - 觀看解析
+							</font>
+						</p>
 -					</div>
 -				</div>
 -			</div>
