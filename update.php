@@ -67,16 +67,16 @@
 	echo "<form action='member.php' method='post'>";
 	echo "請輸入新的密碼：<input type='password' name='password' value='$userPASS'><br>";
 	echo "請重新選擇性別；<br>
-					男<input type='radio' name='$usergender'><br>
-  					女<input type='radio' name='$usergender'><br>"
+		<input type='radio' name='$usergender' id="male"><label for="male">男性</label><br>
+  		<input type='radio' name='$usergender' id="female"><label for="female">女性</label><br>"
 	echo "請重新選擇年齡：<br>
-					12歲以下<input type='radio' name='age' value='$userage'><br>
-					12歲～20歲<input type='radio' name='age' value='$userage'><br>
-					21歲～30歲<input type='radio' name='age' value='$userage'><br>
-					31歲～40歲<input type='radio' name='age' value='$userage'><br>
-					41歲～50歲<input type='radio' name='age' value='$userage'><br>
-					51歲～60歲<input type='radio' name='age' value='$userage'><br>
-					60歲以上<input type='radio' name='age' value='$userage'><br>"
+		<input type='radio' name='age' value='$userage' id="below12"><label for="below12">12歲以下</label><br>
+		12歲～20歲<input type='radio' name='age' value='$userage' id="1220"><label for="1220">12歲～20歲</label><br>
+		21歲～30歲<input type='radio' name='age' value='$userage' id="2130"><label for="2130">21歲～30歲</label><br>
+		31歲～40歲<input type='radio' name='age' value='$userage' id="3140"><label for="3140">31歲～40歲</label><br>
+		41歲～50歲<input type='radio' name='age' value='$userage' id="4150"><label for="4150">41歲～50歲</label><br>
+		51歲～60歲<input type='radio' name='age' value='$userage' id="5160"><label for="5160">51歲～60歲</label><br>
+		60歲以上<input type='radio' name='age' value='$userage' id="above60"><label for="above60">60歲以上</label><br>"
 	echo "<input type='submit' value='修改資料'><br>";
 	echo "</form>";
 
