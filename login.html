@@ -9,36 +9,32 @@
 
 		<header id="header" class="alt">
 			<div class="logo">
-				<a href="index.html">Home</a> /
-				<a href="enroll.html">Sign up</a> /
-				<a href="login.html">Login</a> /
-				<a href="logout.php">Logout</a>
+					<a href="index.php">Home</a>
 			</div>
+			<a href="login.html">登入</a> /
+			<a href="enroll.html">註冊</a>
 			<a href="#menu" class="toggle"><span>Menu</span></a>
 		</header>
 
 		<nav id="menu">
 			<ul class="links">
-				<li><a href="index.html">首頁</a></li>
-				<li><a href="enroll.html">註冊</a></li>
-				<li><a href="login.html">登入</a></li>
-				<li><a href="logout.php">登出</a></li>
+				<li><a href="index.php">首頁</a></li>
 				<li><a href="check.php">遊戲開始</a></li>
 				<li><a href="recommend.html">相關商品推薦</a></li>
 			</ul>
 		</nav>
 
-		<section id="banner" data-video="images/banner">
+		<section id="banner" data-video="images/background">
 			<div class="inner">
-				<h1>我要登入</h1>
+				<h2><font size="10" color="white">我要登入</font></h2>
 				<form action="login.php" method="post">
-					<p>請輸入帳號：<br>
-					<input type="text" name="userID"><br>
-					請輸入密碼：<br>
-					<input type="password" name="userPASS"><br></p>
-					<input value="login" class="button" type="submit">
-					<p>還沒有帳號嗎，請點此<a href="enroll.html">註冊</a></p>
-				</form>
+					<p>
+					請輸入帳號：<input type="text" name="userID"><br/>
+					請輸入密碼：<input type="password" name="userPASS"><br/>
+					<input value="sign in" class="button" type="submit"><br/>
+					還沒有帳號嗎?立即<a href="enroll.html">註冊</a>
+                	</p>
+                </form>
 				
 			</div>
 		</section>
