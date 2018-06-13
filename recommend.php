@@ -7,7 +7,7 @@
 	</head>
 	<body class="subpage">
 
-		<header id="header" class="alt">
+		<header id="header">
 			<div class="logo">
                 <a href="index.php">Home</a>
             </div>
