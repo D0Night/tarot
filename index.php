@@ -49,62 +49,62 @@ if(isset($_SESSION["login"])){
 		</section>
 
 		<section id="one" class="wrapper style2">
-			<div class="inner">
-				<div class="grid-style">
-					<div>
-						<div class="box">
-							<div class="image fit">
-								<img src="images/tarot3.jpg" alt="" />
-							</div>
-							<div class="content">
-								<header class="align-center">
-									<h2>塔羅介紹</h2>
-								</header>
-								<hr/>
-								<p>　　塔羅牌在西方占卜系統中佔有一重要地位，其由來眾說紛紜，但最普遍的說法為源自十四世紀的義大利，至今已有七世紀的歷史，依然是許多人喜愛的占卜方式。<br>
-								<t>　　塔羅牌學理博大精深，與西方神祕學、神話故事密切相關，從創立之初即用以占卜，分析現今處境和預測未來，也有部分修行者藉塔羅牌解釋夢境與潛意識，分析自身身心靈狀況。</t></p>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div class="box">
-							<div class="image fit">
-								<img src="images/tarotcard.jpg" alt="" />
-							</div>
-							<div class="content">
-								<header class="align-center">
-									<h2>塔牌介紹</h2>
-								</header>
-								<hr/>
-								<p>　　塔羅牌有固定的標準形式，共有78張，其中22張為主牌「大阿爾克納」，通稱「大牌」；剩餘的56張為「小阿爾克納」，通稱「小牌」。大牌代表較抽象、精神層面的原由，小牌則代表具體的事件，大小牌搭配占卜即能獲得最準確的結果。<br>
-								<t>　　小牌分為火、土、風、水四大元素，分別代表權杖、聖杯、寶劍與錢幣，這四樣要素能將世間萬物歸類其中，進而進行占卜。</t></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		
-		
-		<section id="two" class="wrapper style2">
-			<div class="inner">
-				<div class="box">
-					<div class="image fit">
-						<img src="images/tarotgame.jpg" alt="" />
-					</div>
-					<div class="content">
-						<header class="align-center">
-							<h2>遊戲說明</h2>
-						</header>
-						<hr />
-						<p align="center">Step1 - 選擇您想要諮詢的類別 →
-						Step2 - 在心中默想問題 →
-						Step3 - 抽選最有感應的一張牌 →
-						Step4 - 觀看解析</p>
-					</div>
-				</div>
-			</div>
-		</section>
+-			<div class="inner">
+-				<div class="grid-style">
+-					<div>
+-						<div class="box">
+-							<div class="image fit">
+-								<img src="images/tarot3.jpg" alt="" />
+-							</div>
+-							<div class="content">
+-								<header class="align-center">
+-									<h2>塔羅介紹</h2>
+-								</header>
+-								<hr/>
+-								<p>　　塔羅牌在西方占卜系統中佔有一重要地位，其由來眾說紛紜，但最普遍的說法為源自十四世紀的義大利，至今已有七世紀的歷史，依然是許多人喜愛的占卜方式。<br>
+-								<t>　　塔羅牌學理博大精深，與西方神祕學、神話故事密切相關，從創立之初即用以占卜，分析現今處境和預測未來，也有部分修行者藉塔羅牌解釋夢境與潛意識，分析自身身心靈狀況。</t></p>
+-							</div>
+-						</div>
+-					</div>
+-					<div>
+-						<div class="box">
+-							<div class="image fit">
+-								<img src="images/tarotcard.jpg" alt="" />
+-							</div>
+-							<div class="content">
+-								<header class="align-center">
+-									<h2>塔牌介紹</h2>
+-								</header>
+-								<hr/>
+-								<p>　　塔羅牌有固定的標準形式，共有78張，其中22張為主牌「大阿爾克納」，通稱「大牌」；剩餘的56張為「小阿爾克納」，通稱「小牌」。大牌代表較抽象、精神層面的原由，小牌則代表具體的事件，大小牌搭配占卜即能獲得最準確的結果。<br>
+-								<t>　　小牌分為火、土、風、水四大元素，分別代表權杖、聖杯、寶劍與錢幣，這四樣要素能將世間萬物歸類其中，進而進行占卜。</t></p>
+-							</div>
+-						</div>
+-					</div>
+-				</div>
+-			</div>
+-		</section>
+-		
+-		
+-		<section id="two" class="wrapper style2">
+-			<div class="inner">
+-				<div class="box">
+-					<div class="image fit">
+-						<img src="images/tarotgame.jpg" alt="" />
+-					</div>
+-					<div class="content">
+-						<header class="align-center">
+-							<h2>遊戲說明</h2>
+-						</header>
+-						<hr />
+-						<p align="center">Step1 - 選擇您想要諮詢的類別 →
+-						Step2 - 在心中默想問題 →
+-						Step3 - 抽選最有感應的一張牌 →
+-						Step4 - 觀看解析</p>
+-					</div>
+-				</div>
+-			</div>
+-		</section>
 
 		<section class="wrapper style3">
 			<div class="inner">
