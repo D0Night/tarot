@@ -28,37 +28,36 @@
 			<div class="content">
 				<header class="align-center">
 					<h2>
-<?php
-session_start();
-$userID=$_POST["userID"];
-$userPASS=$_POST["userPASS"];
-$link=@mysqli_connect(
-            '140.127.218.154',
-            'root',
-            'tarot9605',
-            'tarot');
-mysqli_select_db($link,'tarot');
+						<?php
+						session_start();
+						$userID=$_POST["userID"];
+						$userPASS=$_POST["userPASS"];
+						$link=@mysqli_connect(
+							    '140.127.218.154',
+							    'root',
+							    'tarot9605',
+							    'tarot');
+						mysqli_select_db($link,'tarot');
 
-$sql="SELECT * FROM member";
-$result=mysqli_query($link,$sql);
+						$sql="SELECT * FROM member";
+						$result=mysqli_query($link,$sql);
 
-while($row=mysqli_fetch_assoc($result)){
-    if($userID==$row['name'] && $userPASS==$row['password']){
-        $_SESSION["login"]=true;
+						while($row=mysqli_fetch_assoc($result)){
+						    if($userID==$row['name'] && $userPASS==$row['password']){
+							$_SESSION["login"]=true;
 
-        $date=strtotime("+3 days",time());
-        setcookie("ID",$userID,$date);
-        setcookie("PASS",$userPASS,$date);
-	}
-}
+							$date=strtotime("+3 days",time());
+							setcookie("ID",$userID,$date);
+							}
+						}
 
-if($_SESSION["login"]==true)
-	header("Location:index.php");
-else
-	echo "帳號或密碼輸入錯誤，請重新輸入";
+						if($_SESSION["login"]==true)
+							header("Location:index.php");
+						else
+							echo "帳號或密碼輸入錯誤，請重新輸入";
 
-mysqli_close($link);
-?>
+						mysqli_close($link);
+						?>
 					</h2>
 				</header>
 			</div>
