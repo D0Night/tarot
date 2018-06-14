@@ -1,3 +1,12 @@
+<?php
+session_start();
+if(isset($_SESSION["login"])){
+    
+}else{
+    header("Location:login.html");
+}
+?>
+
 <html>
 	<head>
 		<title>Tarot login</title>
@@ -9,7 +18,7 @@
 
 		<header id="header" class="alt">
 			<div class="logo">
-					<a href="index.php">Home</a>
+				<a href="index.php">Home</a>
 			</div>
 			<a href="login.html">登入</a> /
 			<a href="enroll.html">註冊</a>
@@ -32,7 +41,7 @@
 					請輸入帳號：<input type="text" name="userID"><br/>
 					請輸入密碼：<input type="password" name="userPASS"><br/>
 					<input value="sign in" class="button" type="submit"><br/>
-					還沒有帳號嗎?立即<a href="enroll.html">註冊</a>
+					還沒有帳號嗎？立即<a href="enroll.html">註冊</a>
                 	</p>
                 </form>
 				
