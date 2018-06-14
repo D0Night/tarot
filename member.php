@@ -33,31 +33,31 @@
                             <p>歡迎<?php echo $_COOKIE["ID"]?>，我們又見面了</p>
 						</header>
                         <hr>
-                        <font size="5" color="black">個人資料</font>
-                        <font size="4" color="black">
-						<p>
-<?php
-session_start();
-$userID=$_COOKIE["ID"];
+			<p>			
+				<font size="5" color="black">個人資料</font>
+				<br/>
+				<font size="4" color="black">
+				<?php
+				$userID=$_COOKIE["ID"];
+				    
+				$link=@mysqli_connect(
+				    '140.127.218.154',
+				    'root',
+				    'tarot9605',
+				    'tarot');
+				mysqli_select_db($link,'tarot');
 
-$link=@mysqli_connect(
-    '140.127.218.154',
-    'root',
-    'tarot9605',
-    'tarot');
-mysqli_select_db($link,'tarot');
+				$sql="SELECT * FROM member WHERE name='$userID'";
+				$result=mysqli_query($link,$sql);
+				$row=mysqli_fetch_assoc($result);
 
-$sql="SELECT * FROM member WHERE name='$userID'";
-$result=mysqli_query($link,$sql);
-$row=mysqli_fetch_assoc($result);
-
-echo "帳號：".$row['name']."<br/>";
-echo "密碼：".$row['password']."<br/>";
-echo "性別：".$row['gender']."<br/>";
-echo "年齡：".$row['age']."<br/>";
-echo "<a href='update.php' class='button special scrolly'>編輯</a><br/>";
-mysqli_close($link);
-?>
+				echo "帳號：".$row['name']."<br/>";
+				echo "密碼：".$row['password']."<br/>";
+				echo "性別：".$row['gender']."<br/>";
+				echo "年齡：".$row['age']."<br/>";
+				echo "<a href='update.php' class='button special scrolly'>編輯</a><br/>";
+				mysqli_close($link);
+				?>
                         </font>
                         </p>
                         <hr>
