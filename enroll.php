@@ -44,7 +44,7 @@
 				if($check==0){
 					$sql2="INSERT INTO member(name,password,gender,age) VALUES('$newname','$newpass','$newgender','$newage')";
 					$insert=mysqli_query($link,$sql2);
-					$_SESSION["login"]="true";
+					$_SESSION["login"]=true;
 					
 					$date=strtotime("+3 days",time());
 					setcookie("ID",$newname,$date);
