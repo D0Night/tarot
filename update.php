@@ -61,7 +61,7 @@
 		$userage=$row['age'];
 	}
 
-	echo "<form action='member.php' method='post'>";
+	echo "<form action='updatedown.php' method='post'>";
 	echo "請輸入新的密碼：<input type='password' name='password' value='$userPASS'><br>";
 	echo "請重新選擇性別；<br>
 		<input type='radio' name='gender' value='$usergender' id='male><label for='male'>男性</label><br>
