@@ -45,9 +45,9 @@
 
 	$link=@mysqli_connect(
 		'140.127.218.154',
-	    'root',
-	    'tarot9605',
-	    'tarot');
+	 	'root',
+	   	'tarot9605',
+	    	'tarot');
 	
 	mysqli_select_db($link,'tarot');
 
@@ -77,6 +77,7 @@
 	echo "<input type='submit' value='修改資料'><br>";
 	echo "</form>";
 
+	mysqli_close($link);
 ?>
 						</p>
 
