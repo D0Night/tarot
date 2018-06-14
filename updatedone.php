@@ -37,6 +37,12 @@
 
 						<?php
 
+							session_start();
+							if(isset($_SESSION["login"])){
+    
+							}else{
+							    header("Location:updatedone.php");
+							}
 							$userID=$_POST["name"];
 							$userPASS=$_POST["password"];
 							$usergender=$_POST["gender"];
