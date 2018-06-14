@@ -29,49 +29,48 @@
 				<div class="box">
 					<div class="content">
 						<header class="align-center">
-                            <h2>會員專區</h2>
-                            <p>修改您的個人資料</p>
+							<h2>會員專區</h2>
+							<p>修改您的個人資料</p>
 						</header>
 						<hr>
 						<p>
-<?php
+							<?php
+							session_start();
+							$userID=$_COOKIE["ID"];
+							$userID=$_POST["name"];
+							$userPASS=$_POST["password"];
+							$usergender=$_POST['gender'];
+							$userage=$_POST['age'];
 
-	session_start();
-	$userID=$_COOKIE["ID"];
-	$userID=$_POST["name"];
-	$userPASS=$_POST["password"];
-	$usergender=$_POST['gender'];
-	$userage=$_POST['age'];
+							$link=@mysqli_connect(
+								'140.127.218.154',
+								'root',
+								'tarot9605',
+								'tarot');
 
-	$link=@mysqli_connect(
-		'140.127.218.154',
-	 	'root',
-	   	'tarot9605',
-	    	'tarot');
-	
-	mysqli_select_db($link,'tarot');
+							mysqli_select_db($link,'tarot');
 
-	$sql="SELECT * FROM member WHERE name='$userID'";
-	$result=mysqli_query($link,$sql);
+							$sql="SELECT * FROM member WHERE name='$userID'";
+							$result=mysqli_query($link,$sql);
 
-	while($row=mysqli_fetch_assoc($result)){
-		$userID=$row["name"];
-		$userPASS=$row["password"];
-		$usergender=$row["gender"];
-		$userage=$row['age'];
-	}
+							while($row=mysqli_fetch_assoc($result)){
+								$userID=$row["name"];
+								$userPASS=$row["password"];
+								$usergender=$row["gender"];
+								$userage=$row['age'];
+							}
 
-	echo "<form action='updatedown.php' method='post'>";
-	echo "請輸入新的密碼：<input type='password' name='password' value='$userPASS'><br>";
-	echo "請重新選擇性別；<br>
-		<input type='radio' name='gender' value='$usergender' id='male><label for='male'>男性</label><br>
-  		<input type='radio' name='gender' value='$usergender' id='female'><label for='female'>女性</label><br>"
-	echo "請重新輸入年齡：<input type='text' name='age'><br/>";
-	echo "<input type='submit' value='修改資料'><br>";
-	echo "</form>";
+							echo "<form action='updatedown.php' method='post'>";
+							echo "請輸入新的密碼：<input type='password' name='password' value='$userPASS'><br>";
+							echo "請重新選擇性別；<br>
+								<input type='radio' name='gender' value='$usergender' id='male><label for='male'>男性</label><br>
+								<input type='radio' name='gender' value='$usergender' id='female'><label for='female'>女性</label><br>"
+							echo "請重新輸入年齡：<input type='text' name='age'><br/>";
+							echo "<input type='submit' value='修改資料'><br>";
+							echo "</form>";
 
-	mysqli_close($link);
-?>
+							mysqli_close($link);
+							?>
 						</p>
 
 		<script src="assets/js/jquery.min.js"></script>
