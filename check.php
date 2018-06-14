@@ -1,6 +1,6 @@
 <html>	
 	<head>
-		<title>Theck</title>
+		<title>Tarot check</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -30,11 +30,11 @@
 					<h2>
 <?php
 session_start();
+if(isset($_SESSION["login"])){
 
-if($_SESSION["login"]==true){
-	header("Location:game.html");
+	header("Location:game.php");
 }else{
-	echo("若要開始遊戲請先登入</br><a href='login.php'>請點此進入登入頁面</a>");
+	echo("若要開始遊戲請先登入</br><a href='login.html'>請點此進入登入頁面</a>");
 }	
 ?>
 					</h2>
