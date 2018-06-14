@@ -1,6 +1,6 @@
 <html>	
 	<head>
-		<title>Check</title>
+		<title>Tarot updatedone</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -39,10 +39,9 @@
 
 	session_start();
 	$userID=$_COOKIE["ID"];
-
 	$userPASS=$_POST["password"];
-	$usergender=$_POST['gender'];
-	$userage=$_POST['age'];
+	$usergender=$_POST["gender"];
+	$userage=$_POST["age"];
 
 	$link=@mysqli_connect(
 	   '140.127.218.154',
