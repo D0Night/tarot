@@ -37,7 +37,7 @@
 
 						<?php
 
-							$userID=$_COOKIE["ID"];
+							$userID=$_POST["name"];
 							$userPASS=$_POST["password"];
 							$usergender=$_POST["gender"];
 							$userage=$_POST["age"];
