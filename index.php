@@ -48,7 +48,7 @@ if(isset($_SESSION["login"])){
 				<a href="#one" class="button special scrolly">塔羅&塔牌介紹</a>
 				<a href="#two" class="button special scrolly">遊戲說明</a>
 				<a href="check.php" class="button special scrolly">遊戲開始</a>
-				<a href="recommend.html" class="button special scrolly">相關商品推薦</a><br/>
+				<a href="recommend.php" class="button special scrolly">相關商品推薦</a><br/>
 				<br/>
 				<br/><br/><br/><br/>
 			</div>
