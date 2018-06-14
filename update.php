@@ -36,12 +36,13 @@
 						<p>
 							<font color="black" size="4">
 							<form action="updatedone.php" method="post">
-							帳號：<?php echo $_COOKIE["ID"] ?><br/>
-							請輸入新的密碼：<input type="password" name="password"><br/>
+							帳號：<?php echo $row['name'] ?><br/>
+							<input type="hidden" name="name" value="<?php echo $row['name'] ?>">
+							請輸入新的密碼：<input type="text" name="password" value="<?php echo $row['password'] ?>"><br/>
 							請重新選擇性別：<br/>
 							<input type="radio" name="gender" value="male" id="male"><label for="male">男性</label>
 							<input type="radio" name="gender" value="female" id="female"><label for="female">女性</label><br/>
-							請重新輸入年齡：<input type="text" name="age"><br/>
+							請重新輸入年齡：<input type="text" name="age" value="<?php echo $row['age'] ?>"><br/>
 							<input type="submit" value="確定" class="button">
 							</form>
 							</font>
