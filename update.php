@@ -35,7 +35,7 @@
 						<hr>
 						<p>
 							<font color="black" size="4">
-							<form action="updatedown.php" method="post">
+							<form action="updatedone.php" method="post">
 							帳號：<?php echo $_COOKIE["ID"] ?><br/>
 							請輸入新的密碼：<input type="password" name="password"><br/>
 							請重新選擇性別：<br/>
