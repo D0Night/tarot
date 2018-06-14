@@ -20,7 +20,7 @@
 			<ul class="links">
                 <li><a href="index.php">首頁</a></li>
 				<li><a href="check.php">遊戲開始</a></li>
-				<li><a href="recommend.html">相關商品推薦</a></li>
+				<li><a href="recommend.php">相關商品推薦</a></li>
 			</ul>
 		</nav>
 
@@ -38,6 +38,13 @@
 				<br/>
 				<font size="4" color="black">
 				<?php
+				if(isset($_SESSION["login"])){
+    
+				}else{
+				    header("Location:member.php");
+				}
+				
+	
 				$userID=$_COOKIE["ID"];
 				    
 				$link=@mysqli_connect(
