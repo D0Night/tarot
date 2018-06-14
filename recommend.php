@@ -15,6 +15,12 @@
 session_start();
 
 if(isset($_SESSION["login"])){
+    
+}else{
+    header("Location:recommend.php");
+}
+			
+if(isset($_SESSION["login"])){
     echo "<a href='logout.php'>登出</a>/";
     echo "<a href='member.php'>會員專區</a>";
 }else{
