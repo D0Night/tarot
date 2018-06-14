@@ -45,7 +45,7 @@ $link=@mysqli_connect(
     'root',
     'tarot9605',
     'tarot');
-mysqli_select_db($link,'member');
+mysqli_select_db($link,'tarot');
 
 $sql="SELECT * FROM member WHERE name='$userID'";
 $result=mysqli_query($link,$sql);
@@ -55,7 +55,7 @@ echo "帳號：".$row['name']."<br/>";
 echo "密碼：".$row['password']."<br/>";
 echo "性別：".$row['gender']."<br/>";
 echo "年齡：".$row['age']."<br/>";
-echo "<a href='#' class='button special scrolly'>編輯</a><br/>";
+echo "<a href='update.php' class='button special scrolly'>編輯</a><br/>";
 
 ?>
                         </font>
