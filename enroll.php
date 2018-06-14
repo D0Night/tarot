@@ -13,6 +13,11 @@
 			</div>
 				<?php
 				session_start();
+				if(isset($_SESSION["login"])){
+
+				}else{
+				    header("Location:game.php");
+				}
 				$newname=$_POST['name'];
 				$newpass=$_POST['password'];
 				$newgender=$_POST['gender'];
