@@ -1,3 +1,12 @@
+<?php
+session_start();
+if(isset($_SESSION["login"])){
+    
+}else{
+    header("Location:update.php");
+}
+?>
+
 <html>	
 	<head>
 		<title>Tarot update</title>
