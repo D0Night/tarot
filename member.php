@@ -38,12 +38,12 @@
 				<br/>
 				<font size="4" color="black">
 				<?php
+				session_start();
 				if(isset($_SESSION["login"])){
     
 				}else{
 				    header("Location:member.php");
-				}
-				
+				}				
 	
 				$userID=$_COOKIE["ID"];
 				    
