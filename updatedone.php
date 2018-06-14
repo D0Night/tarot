@@ -60,7 +60,7 @@
 							echo "密碼：".$row['password']."<br>";
 							echo "性別：".$row['gender']."<br>";
 							echo "年齡：".$row['age']."<br>";
-							echo "a href='update.php'>再次編輯</a>"."<br>";	
+							echo "<a href='update.php'>編輯</a>"."<br>";	
 
 							mysqli_close($link);
 						?>
